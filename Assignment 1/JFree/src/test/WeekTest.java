@@ -98,9 +98,10 @@ public class WeekTest {
 
     @Test
     public void testGetFirstMillisecond() {
-        Week week = new Week(10, 2025);
-        long expected = week.getFirstMillisecond();
-        assertEquals(expected, week.getFirstMillisecond());
+        Week week1 = new Week(10, 2025);
+        Week week2 = new Week(9, 2025);
+        long expected = week2.getLastMillisecond() + 1;
+        assertEquals(expected, week1.getFirstMillisecond());
     }
 
     @Test
@@ -113,9 +114,10 @@ public class WeekTest {
 
     @Test
     public void testGetLastMillisecond() {
-        Week week = new Week(10, 2025);
-        long expected = week.getLastMillisecond();
-        assertEquals(expected, week.getLastMillisecond());
+        Week week1 = new Week(10, 2025);
+        Week week2 = new Week(11, 2025);
+        long expected = week2.getFirstMillisecond() - 1;
+        assertEquals(expected, week1.getLastMillisecond());
     }
 
     @Test
