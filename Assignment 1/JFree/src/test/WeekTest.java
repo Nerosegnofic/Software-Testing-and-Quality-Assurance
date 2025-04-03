@@ -349,9 +349,4 @@ public class WeekTest {
         assertTrue(week1.compareTo(week3) < 0);
         assertTrue(week3.compareTo(week1) > 0);
     }
-
-    @Test
-    public void testPeg() {
-        // Missing - Will do later
-    }
 }
