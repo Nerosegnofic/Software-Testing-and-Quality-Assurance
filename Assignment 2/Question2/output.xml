@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.5 on darwin)" generated="2025-05-01T17:58:59.373091" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuite" source="/Users/aziz/RobotFramework_UI/Software-Testing-and-Quality-Assurance/Assignment 2/Question2/TestSuite.robot">
+<kw name="Open Browser To AliExpress" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:58:59.446538" level="INFO">Opening browser 'chrome' to base url 'https://www.aliexpress.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-01T17:58:59.446437" elapsed="6.034764"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-01T17:59:05.481778" elapsed="0.001729"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//body</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-01T17:59:05.483624" elapsed="0.008988"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:10.494953" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:05.492867" elapsed="5.002569"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:10.497280" level="INFO">Clicking element 'xpath=//div[@role="dialog"]//button[contains(., 'Save')]'.</msg>
+<msg time="2025-05-01T17:59:13.904171" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T17:59:13.904276" level="FAIL">Element with locator 'xpath=//div[@role="dialog"]//button[contains(., 'Save')]' not found.</msg>
+<arg>xpath=//div[@role="dialog"]//button[contains(., 'Save')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T17:59:10.496734" elapsed="3.410318">Element with locator 'xpath=//div[@role="dialog"]//button[contains(., 'Save')]' not found.</status>
+</kw>
+<arg>Click Element</arg>
+<arg>xpath=//div[@role="dialog"]//button[contains(., 'Save')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T17:59:10.495996" elapsed="3.411131"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:13.907353" level="INFO">Clicking button 'xpath=//div[@id="nav-global"]/following::button[1]'.</msg>
+<msg time="2025-05-01T17:59:14.222860" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T17:59:14.222938" level="FAIL">Button with locator 'xpath=//div[@id="nav-global"]/following::button[1]' not found.</msg>
+<arg>xpath=//div[@id="nav-global"]/following::button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T17:59:13.907276" elapsed="0.315905">Button with locator 'xpath=//div[@id="nav-global"]/following::button[1]' not found.</status>
+</kw>
+<arg>Click Button</arg>
+<arg>xpath=//div[@id="nav-global"]/following::button[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T17:59:13.907198" elapsed="0.316024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:17.224597" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:14.223278" elapsed="3.001623"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:17.571434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-01T17:59:17.225311" elapsed="0.346179"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>timeout=40s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-01T17:59:17.571572" elapsed="0.008632"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:58:59.446175" elapsed="18.134096"/>
+</kw>
+<test id="s1-t1" name="Scenario 1: Search Product" line="33">
+<kw name="Search For Product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:17.580817" level="INFO">Typing text 'smart watch' into text field 'xpath=//input[@id="search-words"]'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T17:59:17.580722" elapsed="0.133644"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:17.714708" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@id="search-words"] element.</msg>
+<msg time="2025-05-01T17:59:17.992818" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-05-01T17:59:17.992896" level="INFO">Releasing special key RETURN.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-01T17:59:17.714466" elapsed="3.095207"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:25.812322" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:20.809875" elapsed="5.002854"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:25.840443" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T17:59:25.813100" elapsed="0.027438"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:17.580612" elapsed="8.260023"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:17.580335" elapsed="8.260482"/>
+</test>
+<test id="s1-t2" name="Scenario 2: Filter by Category" line="36">
+<kw name="Search For Product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:25.841695" level="INFO">Typing text 'smart watch' into text field 'xpath=//input[@id="search-words"]'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T17:59:25.841528" elapsed="0.095673"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:25.937546" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@id="search-words"] element.</msg>
+<msg time="2025-05-01T17:59:26.204085" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-05-01T17:59:26.204148" level="INFO">Releasing special key RETURN.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-01T17:59:25.937315" elapsed="4.288647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:35.226777" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:30.226232" elapsed="5.000706"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:35.454020" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T17:59:35.227169" elapsed="0.227134"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:25.841336" elapsed="9.613057"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:40.456467" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:35.454567" elapsed="5.002070"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:40.457284" level="INFO">Executing JavaScript:
+window.scrollBy(0, 1000)
+Without any arguments.</msg>
+<arg>window.scrollBy(0, 1000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-01T17:59:40.456867" elapsed="0.013843"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:43.472118" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:40.470984" elapsed="3.001299"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:43.472978" level="INFO">Typing text '580' into text field 'xpath=(//div[contains(text(),"Price")]/following::input)[1]'.</msg>
+<msg time="2025-05-01T17:59:43.632991" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T17:59:43.633088" level="FAIL">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[1]' not found.</msg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[1]</arg>
+<arg>580</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T17:59:43.472783" elapsed="0.161264">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[1]' not found.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[1]</arg>
+<arg>580</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T17:59:43.472581" elapsed="0.161534"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:43.634447" level="INFO">Typing text '1249' into text field 'xpath=(//div[contains(text(),"Price")]/following::input)[2]'.</msg>
+<msg time="2025-05-01T17:59:43.774208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T17:59:43.774279" level="FAIL">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[2]' not found.</msg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[2]</arg>
+<arg>1249</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T17:59:43.634358" elapsed="0.140168">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[2]' not found.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[2]</arg>
+<arg>1249</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T17:59:43.634252" elapsed="0.140329"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:43.774902" level="INFO">Sending key(s) ('RETURN',) to xpath=(//div[contains(text(),"Price")]/following::input)[2] element.</msg>
+<msg time="2025-05-01T17:59:43.910897" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T17:59:43.910989" level="FAIL">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[2]' not found.</msg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[2]</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="FAIL" start="2025-05-01T17:59:43.774763" elapsed="0.136486">Element with locator 'xpath=(//div[contains(text(),"Price")]/following::input)[2]' not found.</status>
+</kw>
+<arg>Press Keys</arg>
+<arg>xpath=(//div[contains(text(),"Price")]/following::input)[2]</arg>
+<arg>RETURN</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T17:59:43.774682" elapsed="0.136612"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:48.912321" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:43.911397" elapsed="5.001290"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:48.935203" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T17:59:48.913230" elapsed="0.022045"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:25.841019" elapsed="23.094417"/>
+</test>
+<test id="s1-t3" name="Scenario 3: Add to Cart" line="47">
+<kw name="Search For Product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:48.936167" level="INFO">Typing text 'smart watch' into text field 'xpath=//input[@id="search-words"]'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T17:59:48.935974" elapsed="0.119602"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:49.055886" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@id="search-words"] element.</msg>
+<msg time="2025-05-01T17:59:49.326431" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-05-01T17:59:49.326522" level="INFO">Releasing special key RETURN.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-01T17:59:49.055675" elapsed="2.911336"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:56.967445" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:51.967158" elapsed="5.000380"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:56.986237" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T17:59:56.967703" elapsed="0.018623"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:48.935783" elapsed="8.050619"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T17:59:59.987631" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T17:59:56.986556" elapsed="3.001199"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T17:59:59.988146" level="INFO">Clicking element 'xpath=(//a[contains(@href, "item")])[1]'.</msg>
+<arg>xpath=(//a[contains(@href, "item")])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T17:59:59.987965" elapsed="0.067813"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T18:00:05.057927" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T18:00:00.056001" elapsed="5.002395"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:05.060397" level="INFO">Clicking element 'xpath=//button[contains(., "Accept")]'.</msg>
+<msg time="2025-05-01T18:00:05.466035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:05.466119" level="FAIL">Element with locator 'xpath=//button[contains(., "Accept")]' not found.</msg>
+<arg>xpath=//button[contains(., "Accept")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:05.060216" elapsed="0.406148">Element with locator 'xpath=//button[contains(., "Accept")]' not found.</status>
+</kw>
+<arg>Click Element</arg>
+<arg>xpath=//button[contains(., "Accept")]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-05-01T18:00:05.059749" elapsed="0.406662"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(@class, "add-to-cart--addtocart--")]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-01T18:00:05.466505" elapsed="4.829360"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:10.486539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-01T18:00:10.296073" elapsed="0.190547"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:10.486890" level="INFO">Clicking button 'xpath=//button[contains(@class, "add-to-cart--addtocart--")]'.</msg>
+<arg>xpath=//button[contains(@class, "add-to-cart--addtocart--")]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T18:00:10.486770" elapsed="0.052103"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T18:00:13.539300" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T18:00:10.539028" elapsed="3.000444"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:13.541156" level="INFO">Clicking element 'xpath=//a[contains(@href, "shoppingcart")]'.</msg>
+<arg>xpath=//a[contains(@href, "shoppingcart")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T18:00:13.539848" elapsed="2.452265"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T18:00:20.994797" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T18:00:15.992261" elapsed="5.002670"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:21.011887" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T18:00:20.995127" elapsed="0.016835"/>
+</kw>
+<status status="PASS" start="2025-05-01T17:59:48.935569" elapsed="32.076539"/>
+</test>
+<test id="s1-t4" name="Scenario 4: Change Language" line="61">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:21.012529" level="INFO">Clicking element 'xpath=//span[contains(text(),'Language') or contains(text(),'English')]'.</msg>
+<msg time="2025-05-01T18:00:21.377076" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:21.377154" level="FAIL">Element with locator 'xpath=//span[contains(text(),'Language') or contains(text(),'English')]' not found.</msg>
+<arg>xpath=//span[contains(text(),'Language') or contains(text(),'English')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:21.012397" elapsed="0.364999">Element with locator 'xpath=//span[contains(text(),'Language') or contains(text(),'English')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.377511" elapsed="0.000016"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Arabic') or contains(text(),'English')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.377587" elapsed="0.000014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.377647" elapsed="0.000011"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//body[contains(@lang,'ar') or contains(@lang,'en')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.377703" elapsed="0.000008"/>
+</kw>
+<status status="FAIL" start="2025-05-01T18:00:21.012223" elapsed="0.365567">Element with locator 'xpath=//span[contains(text(),'Language') or contains(text(),'English')]' not found.</status>
+</test>
+<test id="s1-t5" name="Scenario 5: Login To Account" line="68">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:21.378066" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Sign In')]'.</msg>
+<msg time="2025-05-01T18:00:21.713304" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:21.713423" level="FAIL">Element with locator 'xpath=//a[contains(text(), 'Sign In')]' not found.</msg>
+<arg>xpath=//a[contains(text(), 'Sign In')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:21.377981" elapsed="0.335739">Element with locator 'xpath=//a[contains(text(), 'Sign In')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.713869" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@type='text' or @name='loginId']</arg>
+<arg>${LOGIN_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.713947" elapsed="0.000011"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>xpath=//input[@type='password' or @name='password']</arg>
+<arg>${LOGIN_PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.714007" elapsed="0.000010"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Sign In') or contains(text(), 'Next')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.714061" elapsed="0.000009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.714104" elapsed="0.000008"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(), 'Welcome') or contains(@class, 'account')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:21.714154" elapsed="0.000010"/>
+</kw>
+<status status="FAIL" start="2025-05-01T18:00:21.377876" elapsed="0.336415">Element with locator 'xpath=//a[contains(text(), 'Sign In')]' not found.</status>
+</test>
+<test id="s1-t6" name="Scenario 6: Change Currency" line="77">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:21.714602" level="INFO">Clicking element 'xpath=//span[contains(text(),'USD') or contains(text(),'EGP')]'.</msg>
+<msg time="2025-05-01T18:00:22.988661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:22.988777" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="hv_hx"&gt;...&lt;/span&gt; is not clickable at point (1648, 786). Other element would receive the click: &lt;div tabindex="-1" class="comet-v2-modal-wrap"&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000102ebef3c cxxbridge1$string$len + 406076
+4   chromedriver                        0x0000000102ebd4a8 cxxbridge1$string$len + 399272
+5   chromedriver                        0x0000000102ebb2bc cxxbridge1$string$len + 390588
+6   chromedriver                        0x0000000102eba6b8 cxxbridge1$string$len + 387512
+7   chromedriver                        0x0000000102eaf01c cxxbridge1$string$len + 340764
+8   chromedriver                        0x0000000102eaeaa8 cxxbridge1$string$len + 339368
+9   chromedriver                        0x0000000102efa480 cxxbridge1$string$len + 649088
+10  chromedriver                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8
+</msg>
+<arg>xpath=//span[contains(text(),'USD') or contains(text(),'EGP')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:21.714497" elapsed="1.275937">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="hv_hx"&gt;...&lt;/span&gt; is not clickable at point (1648, 786). Other element would receive the click: &lt;div tabindex="-1" class="comet-v2-modal-wrap"&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000102ebef3c cxxbridge1$string$len + 406076
+4   chromedriver                        0x0000000102ebd4a8 cxxbridge1$string$len + 399272
+5   chromedriver                        0x0000000102ebb2bc cxxbridge1$string$len + 390588
+6   chromedriver                        0x0000000102eba6b8 cxxbridge1$string$len + 387512
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:22.990561" elapsed="0.000018"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'USD') or contains(text(),'EGP')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:22.990629" elapsed="0.000011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:22.990680" elapsed="0.000009"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'USD') or contains(text(),'EGP')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:22.990726" elapsed="0.000009"/>
+</kw>
+<status status="FAIL" start="2025-05-01T18:00:21.714384" elapsed="1.276427">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="hv_hx"&gt;...&lt;/span&gt; is not clickable at point (1648, 786). Other element would receive the click: &lt;div tabindex="-1" class="comet-v2-modal-wrap"&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000102ebef3c cxxbridge1$string$len + 406076
+4   chromedriver                        0x0000000102ebd4a8 cxxbridge1$string$len + 399272
+5   chromedriver                        0x0000000102ebb2bc cxxbridge1$string$len + 390588
+6   chromedriver                        0x0000000102eba6b8 cxxbridge1$string$len + 387512
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8</status>
+</test>
+<test id="s1-t7" name="Scenario 7: Zoom Product Image" line="84">
+<kw name="Search For Product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:22.991245" level="INFO">Typing text 'smart watch' into text field 'xpath=//input[@id="search-words"]'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T18:00:22.991155" elapsed="0.109478"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:23.100959" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@id="search-words"] element.</msg>
+<msg time="2025-05-01T18:00:23.378269" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-05-01T18:00:23.378330" level="INFO">Releasing special key RETURN.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-05-01T18:00:23.100736" elapsed="3.039013"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T18:00:31.141554" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T18:00:26.140052" elapsed="5.001635"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:31.156872" level="INFO">Current page contains text 'smart watch'.</msg>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-05-01T18:00:31.141886" elapsed="0.015080"/>
+</kw>
+<status status="PASS" start="2025-05-01T18:00:22.991060" elapsed="8.165967"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:31.157263" level="INFO">Clicking element 'xpath=(//a[contains(@href, "item")])[1]'.</msg>
+<msg time="2025-05-01T18:00:32.515946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:32.516068" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="jr_g h5_ia search-card-item" href="https://ar.aliexpress.com/item/1005008521558395.html?spm=a2g0o.productlist.main.1.4ba8QeEjQeEjOB&amp;amp;algo_pvid=9e9df6c1-1683-427f-9198-7a05d13bd8c1&amp;amp;algo_exp_id=9e9df6c1-1683-427f-9198-7a05d13bd8c1-0&amp;amp;pdp_ext_f=%7B%22order%22%3A%2268%22%2C%22eval%22%3A%221%22%7D&amp;amp;pdp_npi=4%40dis%21EGP%218343.95%211390.57%21%21%21149.95%2124.99%21%40210123bc17461115864161663e68c2%2112000045544706826%21sea%21EG%210%21ABX&amp;amp;curPageLogUid=jWnYVOYZtr99&amp;amp;utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank" dir="rtl" rel="follow" data-spm-anchor-id="a2g0o.productlist.main.1"&gt;...&lt;/a&gt; is not clickable at point (1299, 131). Other element would receive the click: &lt;video class="video--video--bsRAdyg" poster="https://ae-pic-a1.aliexpress-media.com/kf/Sf7076aa999b940ff98a7ec464639dc00S.jpg_960x960q75.jpg_.avif" playsinline="" controlslist="nodownload"&gt;...&lt;/video&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$string$len + 93028
+3   chromedriver                        0x0000000102ebef3c cxxbridge1$string$len + 406076
+4   chromedriver                        0x0000000102ebd4a8 cxxbridge1$string$len + 399272
+5   chromedriver                        0x0000000102ebb2bc cxxbridge1$string$len + 390588
+6   chromedriver                        0x0000000102eba6b8 cxxbridge1$string$len + 387512
+7   chromedriver                        0x0000000102eaf01c cxxbridge1$string$len + 340764
+8   chromedriver                        0x0000000102eaeaa8 cxxbridge1$string$len + 339368
+9   chromedriver                        0x0000000102efa480 cxxbridge1$string$len + 649088
+10  chromedriver                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8
+</msg>
+<arg>xpath=(//a[contains(@href, "item")])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:31.157142" elapsed="1.359258">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="jr_g h5_ia search-card-item" href="https://ar.aliexpress.com/item/1005008521558395.html?spm=a2g0o.productlist.main.1.4ba8QeEjQeEjOB&amp;amp;algo_pvid=9e9df6c1-1683-427f-9198-7a05d13bd8c1&amp;amp;algo_exp_id=9e9df6c1-1683-427f-9198-7a05d13bd8c1-0&amp;amp;pdp_ext_f=%7B%22order%22%3A%2268%22%2C%22eval%22%3A%221%22%7D&amp;amp;pdp_npi=4%40dis%21EGP%218343.95%211390.57%21%21%21149.95%2124.99%21%40210123bc17461115864161663e68c2%2112000045544706826%21sea%21EG%210%21ABX&amp;amp;curPageLogUid=jWnYVOYZtr99&amp;amp;utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank" dir="rtl" rel="follow" data-spm-anchor-id="a2g0o.productlist.main.1"&gt;...&lt;/a&gt; is not clickable at point (1299, 131). Other element would receive the click: &lt;video class="video--video--bsRAdyg" poster="https://ae-pic-a1.aliexpress-media.com/kf/Sf7076aa999b940ff98a7ec464639dc00S.jpg_960x960q75.jpg_.avif" playsinline="" controlslist="nodownload"&gt;...&lt;/video&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:32.516527" elapsed="0.000016"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<arg>xpath=//img[contains(@src, 'jpg') or contains(@src, 'jpeg')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:32.516593" elapsed="0.000010"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:32.516641" elapsed="0.000008"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, 'zoom') or contains(@class, 'viewer')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:32.516684" elapsed="0.000034"/>
+</kw>
+<status status="FAIL" start="2025-05-01T18:00:22.990910" elapsed="9.525890">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="jr_g h5_ia search-card-item" href="https://ar.aliexpress.com/item/1005008521558395.html?spm=a2g0o.productlist.main.1.4ba8QeEjQeEjOB&amp;amp;algo_pvid=9e9df6c1-1683-427f-9198-7a05d13bd8c1&amp;amp;algo_exp_id=9e9df6c1-1683-427f-9198-7a05d13bd8c1-0&amp;amp;pdp_ext_f=%7B%22order%22%3A%2268%22%2C%22eval%22%3A%221%22%7D&amp;amp;pdp_npi=4%40dis%21EGP%218343.95%211390.57%21%21%21149.95%2124.99%21%40210123bc17461115864161663e68c2%2112000045544706826%21sea%21EG%210%21ABX&amp;amp;curPageLogUid=jWnYVOYZtr99&amp;amp;utparam-url=scene%3Asearch%7Cquery_from%3A" target="_blank" dir="rtl" rel="follow" data-spm-anchor-id="a2g0o.productlist.main.1"&gt;...&lt;/a&gt; is not clickable at point (1299, 131). Other element would receive the click: &lt;video class="video--video--bsRAdyg" poster="https://ae-pic-a1.aliexpress-media.com/kf/Sf7076aa999b940ff98a7ec464639dc00S.jpg_960x960q75.jpg_.avif" playsinline="" controlslist="nodownload"&gt;...&lt;/video&gt;
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+0   chromedriver                        0x000000010332ea54 cxxbridge1$str$ptr + 2803960
+1   chromedriver                        0x0000000103326cf0 cxxbridge1$str$ptr + 2771860
+2   chromedriver                        0x0000000102e72864 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000102ead7ec cxxbridge1$string$len + 334572
+11  chromedriver                        0x00000001032f3ccc cxxbridge1$str$ptr + 2562928
+12  chromedriver                        0x00000001032f6f98 cxxbridge1$str$ptr + 2575932
+13  chromedriver                        0x00000001032d42c4 cxxbridge1$str$ptr + 2433384
+14  chromedriver                        0x00000001032f7810 cxxbridge1$str$ptr + 2578100
+15  chromedriver                        0x00000001032c52f0 cxxbridge1$str$ptr + 2371988
+16  chromedriver                        0x000000010331757c cxxbridge1$str$ptr + 2708512
+17  chromedriver                        0x0000000103317708 cxxbridge1$str$ptr + 2708908
+18  chromedriver                        0x000000010332693c cxxbridge1$str$ptr + 2770912
+19  libsystem_pthread.dylib             0x000000019db9b2e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x000000019db960fc thread_start + 8</status>
+</test>
+<test id="s1-t8" name="Scenario 8: Change Shipping Destination" line="92">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:32.517390" level="INFO">Clicking element 'xpath=//span[contains(@class, 'ship-to') or contains(text(),'Ship to')]'.</msg>
+<arg>xpath=//span[contains(@class, 'ship-to') or contains(text(),'Ship to')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-01T18:00:32.517281" elapsed="0.034496"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-01T18:00:34.552884" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-01T18:00:32.551897" elapsed="2.001121"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-01T18:00:34.553341" level="INFO">Clicking element 'xpath=//a[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]'.</msg>
+<msg time="2025-05-01T18:00:34.914545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-01T18:00:34.914624" level="FAIL">Element with locator 'xpath=//a[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]' not found.</msg>
+<arg>xpath=//a[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-01T18:00:34.553192" elapsed="0.361671">Element with locator 'xpath=//a[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:34.914974" elapsed="0.000019"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-05-01T18:00:34.915053" elapsed="0.000012"/>
+</kw>
+<status status="FAIL" start="2025-05-01T18:00:32.516966" elapsed="2.398176">Element with locator 'xpath=//a[contains(text(),'United Arab Emirates') or contains(text(),'Germany')]' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-01T18:00:34.915373" elapsed="0.189888"/>
+</kw>
+<status status="FAIL" start="2025-05-01T17:58:59.373553" elapsed="95.731790"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestSuite" id="s1" pass="3" fail="5" skip="0">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
